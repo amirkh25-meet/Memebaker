@@ -145,58 +145,47 @@ body{
 .form_pages{
 	overflow: hidden;
 }
-
-/* Container for the bakery post */
+	
 .the-bakery {
-    max-width: 600px; /* Adjust the max-width as needed */
-    margin: 20px auto; /* Center the post with auto margin */
-    padding: 20px; /* Padding inside the container */
-    border: 1px solid #e0e0e0; /* Light border */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    background-color: #fff; /* White background */
-    overflow: hidden; /* Hide overflow */
-    transition: transform 0.3s; /* Smooth transform transition */
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s;
     align-items: center;
     justify-content: center;
 }
 
-/* Hover effect for the bakery */
 .the-bakery:hover {
-    transform: translateY(-10px); /* Slightly lift the post on hover */
+    transform: translateY(-10px);
 }
 
-/* Styling specific to the post */
-.post {
-    /* You can add additional post-specific styles here if needed */
-}
-
-/* Image inside the bakery post */
 .the-bakery .the-image {
-    width: 100%; /* Full width image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
 }
 
-/* Description inside the bakery post */
 .the-bakery .img-description {
-    margin-top: 15px; /* Space above the description */
-    font-size: 16px; /* Font size for description */
-    line-height: 1.6; /* Line height for readability */
-    color: #333; /* Dark text color */
-    text-align: center; /* Center the text */
-    padding: 10px 20px; /* Padding around the text */
-    background-color: #f9f9f9; /* Light background for the description */
-    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9; 
+    border-radius: 0 0 10px 10px; 
 }
-
-/* Optional: Add some styling for responsiveness */
 @media (max-width: 768px) {
     .the-bakery {
-        padding: 15px; /* Reduce padding on smaller screens */
+        padding: 15px; 
     }
 
     .the-bakery .img-description {
-        font-size: 14px; /* Smaller font size for description */
+        font-size: 14px;
     }
 }
