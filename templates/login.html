@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+    
+    <title>Login Page</title>
+</head>
+<body class="form_pages">
+    <header class="header">
+        <img class="logo" width="200px" src="{{url_for('static', filename='Membakery Logo.png')}}">
+        <nav class="nav_bar">
+            <a href="/"><li>Home</li></a>
+            <a href="/allMemesPlace"><li>Bakery</li></a>
+            <a><li>About</li></a>
+        </nav>
+        <a href="/login"><button class="login_button">Log in</button></a>
+    </header>
+    <div class="form-container">
+        <img class="form-bg" src="{{url_for('static', filename='sign_in_bg.jpg')}}">
+        <div class="input_fields_container">
+            <form method="POST" action="/login">
+                <label for='email'>Email</label>
+                <input type="text" name="email"><br><br>
+                <label for='password'>Password</label>
+                <input type="password" name="password"><br><br>
+                <button method="POST">Log In</button><br><br>
+            </form>
+        <a href="/signup"><button>Do not have an account ? Sign Up.</button></a>
+        <h1>{{ e }}</h1>
+        </div>
+    </div>
+</body>
+</html>

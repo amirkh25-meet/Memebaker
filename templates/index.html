@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+    <title>Document</title>
+</head>
+<body class="form_pages">
+    <header class="header">
+        <img class="logo" width="200px" src="{{url_for('static', filename='Membakery Logo.png')}}">
+        <nav class="nav_bar">
+            <a href="/"><li>Home</li></a>
+            <a href="/allMemesPlace"><li>Bakery</li></a>
+            <a><li>About</li></a>
+        </nav>
+        {% if active_user == False %}
+            <a href="/login"><button class="login_button">Log in</button></a>
+        {% else %}
+            <div class="dropdown">
+                <button class="login_button dropbtn">{{ user_name }}</button>
+                <div class="dropdown-content">
+                    <form action="/" method="POST">
+                     <button type="submit" name="submit">Sign Out</button>
+                    </form>
+                </div>
+            </div>
+        {% endif %}
+    </header>
+    <div class="main_body">
+        <img class="memebakery_homepage_img" src="{{url_for('static', filename='Memebakery_Homepage.png')}}">
+        <a href="/memeKitchen"><button class="bake_button">Bake Now !</button></a>
+    </div>
+</body>
+</html>
